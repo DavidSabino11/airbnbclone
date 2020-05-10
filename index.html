@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Airbnb Lansing Page</title>
+</head>
+
+<body onload="carregaQuartos()">
+  <header class="headertop">
+    <div class="container">
+      <img src="logo.png" class="d-inline-block align-top" width="180px">
+      <a href="https://www.linkedin.com/in/david-sabino/"><img src="logo2.png" class="d-inline-block align-top"
+          width="40px" id="linkedin"></a>
+    </div>
+  </header>
+
+  <main class="pt-5">
+
+    <h3 class="pb-3">Os melhores preços para você!</h3>
+    <section class="sort-by">
+      <button class="sort-by__button" data-type="price">
+        Menor preço
+      </button>
+      <button class="sort-by__button" data-type="price">
+        Maior preço
+      </button>
+      <button class="sort-by__button" data-type="property_type">
+        Tipo
+      </button>
+    </section>
+
+    <section id="all-rooms" class="all-rooms flex-spcbtw">
+
+    </section>
+
+    <div class="d-flex">
+      <div class="row justify-content-around " id="quartos">
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="container">
+      <p id="rodape">David Sabino</p>
+      <div>
+        <img src="gama.png" class="d-inline-block align-top" width="170px">
+      </div>
+    </div>
+  </footer>
+
+
+  </footer>
+  <code id="results"></code>
+  <script src="index.js"></script>
+</body>
+
+</html>
